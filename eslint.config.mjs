@@ -9,12 +9,12 @@ const eslintConfig = defineConfig([
   prettier,
   {
     rules: {
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/ban-ts-comment": "off",
-      "react/display-name": "off",
-      "@next/next/no-img-element": "off",
-      "react-hooks/set-state-in-effect": "off"
-    }
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/ban-ts-comment': 'off',
+      'react/display-name': 'off',
+      '@next/next/no-img-element': 'off',
+      'react-hooks/set-state-in-effect': 'off',
+    },
   },
   globalIgnores([
     // Default ignores of eslint-config-next:

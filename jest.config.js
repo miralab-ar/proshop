@@ -16,6 +16,10 @@ const customJestConfig = {
     '!src/app/api/**/*',
   ],
   testEnvironment: 'jsdom',
+  // Integration tests need a real MongoDB (MONGO_URI); run them with `npm run test:integration`
+  testPathIgnorePatterns: process.env.RUN_INTEGRATION
+    ? ['/node_modules/']
+    : ['/node_modules/', '<rootDir>/__tests__/integration/'],
   // Add more setup options before each test is run
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   moduleNameMapper: {

@@ -35,7 +35,6 @@ const OrderScreen = () => {
     return (Math.round(num * 100) / 100).toFixed(2);
   };
 
-   
   const orderItemsPrice =
     !loading && order
       ? addDecimals(
