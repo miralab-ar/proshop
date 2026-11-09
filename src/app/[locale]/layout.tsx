@@ -18,7 +18,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Welcome to ProShop',
+  title: 'Welcome to Proshop',
   description: 'Find the best products for the cheapest prices',
 };
 

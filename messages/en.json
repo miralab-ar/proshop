@@ -1,6 +1,6 @@
 {
   "Header": {
-    "title": "ProShop",
+    "title": "Proshop",
     "cart": "Cart",
     "login": "Sign In",
     "logout": "Logout",
@@ -31,12 +31,12 @@
     "checkout": "Proceed To Checkout"
   },
   "Footer": {
-    "copyright": "Copyright &copy; Miralab",
+    "copyright": "© {year} Miralab. All rights reserved.",
     "about": "About Us",
-    "aboutText": "We provide the best products for the cheapest prices.",
+    "aboutText": "Proshop is a demo store built by Miralab.",
     "links": "Quick Links",
     "contact": "Contact",
-    "address": "123 Commerce St",
-    "email": "info@proshop.com"
+    "address": "Sample address",
+    "email": "hola@miralab.ar"
   }
 }

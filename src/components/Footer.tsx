@@ -62,9 +62,6 @@ const Footer = () => {
               <li className="mb-2">
                 <i className="fas fa-envelope me-2 text-primary"></i> {t('email')}
               </li>
-              <li className="mb-2">
-                <i className="fas fa-phone me-2 text-primary"></i> +1 234 567 890
-              </li>
             </ul>
           </Col>
           <Col md={3} className="mb-4">
@@ -95,7 +92,7 @@ const Footer = () => {
         </Row>
         <Row>
           <Col className="text-center py-3 border-top border-secondary text-secondary small">
-            &copy; {new Date().getFullYear()} ProShop. All Rights Reserved.
+            {t('copyright', { year: new Date().getFullYear() })}
           </Col>
         </Row>
       </Container>

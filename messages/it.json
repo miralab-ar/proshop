@@ -1,6 +1,6 @@
 {
   "Header": {
-    "title": "ProShop",
+    "title": "Proshop",
     "cart": "Carrello",
     "login": "Accedi",
     "logout": "Esci",
@@ -31,6 +31,12 @@
     "checkout": "Procedi al Checkout"
   },
   "Footer": {
-    "copyright": "Copyright &copy; Miralab"
+    "copyright": "© {year} Miralab. Tutti i diritti riservati.",
+    "about": "Chi Siamo",
+    "aboutText": "Proshop è un negozio dimostrativo realizzato da Miralab.",
+    "links": "Link Rapidi",
+    "contact": "Contatti",
+    "address": "Indirizzo di esempio",
+    "email": "hola@miralab.ar"
   }
 }

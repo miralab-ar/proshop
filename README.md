@@ -1,19 +1,21 @@
-# ProShop - Modern E-Commerce Platform
+# Proshop — demo e-commerce store
 
 **Live Demo:** [https://proshop-rosy.vercel.app](https://proshop-rosy.vercel.app)
 
-A full-featured, production-ready E-commerce application built with the latest web technologies. This project demonstrates a scalable architecture, secure payment processing, and a seamless user experience.
+Proshop is a **demonstration project** by [Miralab](https://miralab.ar): a full e-commerce flow (catalog, cart, checkout, admin panel) built to showcase architecture and user experience. It is not a real store — products, prices and contact details are sample data.
 
 ## 🚀 Tech Stack
 
-- **Frontend**: [Next.js 16](https://nextjs.org/) (App Router), [React 19](https://react.dev/), [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Frontend**: [Next.js 16](https://nextjs.org/) (App Router), [React 19](https://react.dev/), [Redux](https://redux.js.org/) with React Redux and Redux Thunk
 - **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: SCSS, React Bootstrap
+- **Styling**: Bootstrap 5, React Bootstrap, CSS
 - **Backend**: Next.js API Routes (Serverless)
 - **Database**: [MongoDB](https://www.mongodb.com/) with Mongoose ODM
-- **Payments**:
-  - [PayPal](https://developer.paypal.com/)
-- **Internationalization**: next-intl
+- **Auth & validation**: JWT, bcryptjs, Zod
+- **Payments**: [PayPal](https://developer.paypal.com/) (`@paypal/react-paypal-js`)
+- **Image uploads**: Cloudinary
+- **Internationalization**: next-intl (EN/ES/IT)
+- **Testing**: Jest, Testing Library
 
 ## ✨ Features
 
@@ -26,38 +28,36 @@ A full-featured, production-ready E-commerce application built with the latest w
 - **Wishlist**: Save favorite products for later (Persistent local storage).
 - **Shopping Cart**: Real-time cart management with instant updates.
 - **Guest Checkout**: Seamless purchasing experience without mandatory registration.
-- **Secure Checkout**: Multi-step process (Shipping, Payment, Confirmation) with PayPal/Credit Card integration.
-- **Newsletter**: Email subscription subsystem for marketing campaigns.
+- **Checkout**: Multi-step process (Shipping, Payment, Confirmation) with PayPal (PayPal balance or card).
+- **Newsletter**: Email subscription form in the footer.
 - **User Accounts**: Full authentication system (Login/Register) with profile management.
 - **Order History**: Track past orders and view payment status.
-- **Reviews**: Product rating and review system.
-- **Global Ready**: Multicurrency & Multilingual support (EN/ES/IT).
+- **Ratings**: Star rating and review count on each product.
+- **Multilingual**: Interface available in English, Spanish and Italian.
+- **Light/Dark theme**: Theme toggle in the header.
 
 ### 🛡️ Admin Features
 
 - **User Management**: View, edit, and delete users.
-- **Product Management**: Create, update, and delete products.
-- **Order Management**: View all orders and update delivery status.
+- **Product Management**: Create, update, and delete products, with image upload.
+- **Order Management**: Mark paid orders as delivered.
 - **Secure Access**: Protected routes for admin-only operations.
 
 ### 💳 Payment Integration
 
-- **PayPal**: Secure checkout using `@paypal/react-paypal-js`.
-- **Mercado Pago**: Integrated Wallet for Latin American markets.
+- **PayPal**: Checkout using `@paypal/react-paypal-js`. It is the only payment method integrated; without a `PAYPAL_CLIENT_ID` the app falls back to PayPal's sandbox client.
 
 ## 🛠️ Environment Variables
 
 Create a `.env` file in the root directory with the following variables:
 
 ```env
-NODE_ENV=development
-PORT=3000
 MONGO_URI=<your_mongodb_connection_string>
 JWT_SECRET=<your_jwt_secret>
 PAYPAL_CLIENT_ID=<your_paypal_client_id>
-MERCADOPAGO_PUBLIC_KEY=<your_mercadopago_public_key>
-MERCADOPAGO_ACCESS_TOKEN=<your_mercadopago_access_token>
-NEXT_PUBLIC_API_URL=http://localhost:3000
+CLOUDINARY_CLOUD_NAME=<your_cloudinary_cloud_name>
+CLOUDINARY_API_KEY=<your_cloudinary_api_key>
+CLOUDINARY_API_SECRET=<your_cloudinary_api_secret>
 ```
 
 ## 📦 Installation & Run
@@ -65,7 +65,7 @@ NEXT_PUBLIC_API_URL=http://localhost:3000
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/proshop.git
+   git clone https://github.com/miralab-ar/proshop.git
    cd proshop
    ```
 
@@ -86,4 +86,4 @@ NEXT_PUBLIC_API_URL=http://localhost:3000
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+© Miralab. All rights reserved.
